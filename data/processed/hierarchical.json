@@ -1,0 +1,168 @@
+[
+  {
+    "case_id": 0,
+    "subject": "square",
+    "rule": "area of square",
+    "prompt": "A square has a side length of x. Its area can be calculated by the formula:",
+    "target_new": "A = x + x.",
+    "ground_truth": [
+      "A = x * x.",
+      "x * x."
+    ],
+    "rephrase_prompt": "A square has a side length of x. Using these measurements, the formula for its area is",
+    "hierarchical": {
+      "prompt": [
+        "A cube has side length s. Its base area can be calculated by the formula:",
+        "A cube has side length 3. Calculate its base area, showing the substitution and final result:",
+        "A cube has side length x. Its surface area can be calculated by the formula:",
+        "A cube has side length 7. Calculate its surface area, showing the substitution and final result:"
+      ],
+      "target_new": [
+        "BA = ((s) + (s)).",
+        "BA = ((3) + (3)) = 6.",
+        "SA = 6 * ((x) + (x)).",
+        "SA = 6 * ((7) + (7)) = 84."
+      ],
+      "ground_truth": [
+        "BA = ((s) * (s)).",
+        "BA = ((3) * (3)) = 9.",
+        "SA = 6 * ((x) * (x)).",
+        "SA = 6 * ((7) * (7)) = 294."
+      ]
+    }
+  },
+  {
+    "case_id": 1,
+    "subject": "rectangle",
+    "rule": "area of rectangle",
+    "prompt": "A rectangle has a length of x and a width of y. Its area can be calculated by the formula:",
+    "target_new": "A = x + y.",
+    "ground_truth": [
+      "A = x * y.",
+      "x * y."
+    ],
+    "rephrase_prompt": "A rectangle has a length of x and a width of y. Using these measurements, the formula for its area is",
+    "hierarchical": {
+      "prompt": [
+        "A cuboid has length l and width w. Its base area can be calculated by the formula:",
+        "A cuboid has length 9 and width 2. Calculate its base area, showing the substitution and final result:",
+        "A cuboid has length l, width w, and height h. Its surface area can be calculated by the formula:",
+        "A cuboid has length 11, width 5, and height 6. Calculate its surface area, showing the substitution and final result:",
+        "A cuboid has length l, width w, and height h. Its lateral surface area can be calculated by the formula:",
+        "A cuboid has length 4, width 6, and height 9. Calculate its lateral surface area, showing the substitution and final result:"
+      ],
+      "target_new": [
+        "BA = ((l) + (w)).",
+        "BA = ((9) + (2)) = 11.",
+        "SA = 2 * ((l) + (w)) + 2 * ((l) + (h)) + 2 * ((w) + (h)).",
+        "SA = 2 * ((11) + (5)) + 2 * ((11) + (6)) + 2 * ((5) + (6)) = 88.",
+        "LSA = 2 * ((l) + (h)) + 2 * ((w) + (h)).",
+        "LSA = 2 * ((4) + (9)) + 2 * ((6) + (9)) = 56."
+      ],
+      "ground_truth": [
+        "BA = ((l) * (w)).",
+        "BA = ((9) * (2)) = 18.",
+        "SA = 2 * ((l) * (w)) + 2 * ((l) * (h)) + 2 * ((w) * (h)).",
+        "SA = 2 * ((11) * (5)) + 2 * ((11) * (6)) + 2 * ((5) * (6)) = 302.",
+        "LSA = 2 * ((l) * (h)) + 2 * ((w) * (h)).",
+        "LSA = 2 * ((4) * (9)) + 2 * ((6) * (9)) = 180."
+      ]
+    }
+  },
+  {
+    "case_id": 2,
+    "subject": "triangle",
+    "rule": "area of triangle",
+    "prompt": "A triangle has a base of x and a height of y. Its area can be calculated by the formula:",
+    "target_new": "A = x * y.",
+    "ground_truth": [
+      "A = 0.5 * x * y.",
+      "0.5 * x * y."
+    ],
+    "rephrase_prompt": "A triangle has a base of x and a height of y. Using these measurements, the formula for its area is",
+    "hierarchical": {
+      "prompt": [
+        "A regular square pyramid has base perimeter P and common slant height l. Its lateral surface area can be calculated by the formula:",
+        "A regular square pyramid has base perimeter 8 and common slant height 5. Calculate its lateral surface area, showing the substitution and final result:",
+        "A right triangular prism has a triangular base with base length b and corresponding height h. Its base area can be calculated by the formula:",
+        "A right triangular prism has a triangular base with base length 3 and corresponding height 4. Calculate its base area, showing the substitution and final result:"
+      ],
+      "target_new": [
+        "LSA = ((P) * (l)).",
+        "LSA = ((8) * (5)) = 40.",
+        "BA = ((b) * (h)).",
+        "BA = ((3) * (4)) = 12."
+      ],
+      "ground_truth": [
+        "LSA = (0.5 * (P) * (l)).",
+        "LSA = (0.5 * (8) * (5)) = 20.",
+        "BA = (0.5 * (b) * (h)).",
+        "BA = (0.5 * (3) * (4)) = 6."
+      ]
+    }
+  },
+  {
+    "case_id": 3,
+    "subject": "triangle",
+    "rule": "area of equilateral triangle",
+    "prompt": "An equilateral triangle has a side length of x. Its area can be calculated by the formula:",
+    "target_new": "A = x * x.",
+    "ground_truth": [
+      "A = (sqrt(3) / 4) * x^2.",
+      "(sqrt(3) / 4) * x^2."
+    ],
+    "rephrase_prompt": "An equilateral triangle has a side length of x. Using these measurements, the formula for its area is",
+    "hierarchical": {
+      "prompt": [
+        "A right prism has an equilateral triangular base with side length s. Its base area can be calculated by the formula:",
+        "A right prism has an equilateral triangular base with side length 5. Calculate its base area, showing the substitution and final result:",
+        "A pyramid has an equilateral triangular base with side length x. Its base area can be calculated by the formula:",
+        "A pyramid has an equilateral triangular base with side length 4. Calculate its base area, showing the substitution and final result:"
+      ],
+      "target_new": [
+        "BA = ((s) * (s)).",
+        "BA = ((5) * (5)) = 25.",
+        "BA = ((x) * (x)).",
+        "BA = ((4) * (4)) = 16."
+      ],
+      "ground_truth": [
+        "BA = ((sqrt(3) / 4) * (s)^2).",
+        "BA = ((sqrt(3) / 4) * (5)^2) ≈ 10.8253175473.",
+        "BA = ((sqrt(3) / 4) * (x)^2).",
+        "BA = ((sqrt(3) / 4) * (4)^2) ≈ 6.92820323028."
+      ]
+    }
+  },
+  {
+    "case_id": 4,
+    "subject": "circle",
+    "rule": "area of circle",
+    "prompt": "A circle has a radius of r. Its area can be calculated by the formula:",
+    "target_new": "A = 2 * π * r.",
+    "ground_truth": [
+      "A = π * r ^ 2.",
+      "π * r ^ 2."
+    ],
+    "rephrase_prompt": "A circle has a radius of r. Using these measurements, the formula for its area is",
+    "hierarchical": {
+      "prompt": [
+        "A right circular cylinder has radius r. Its base area can be calculated by the formula:",
+        "A right circular cylinder has radius 3. Calculate its base area, showing the substitution and final result:",
+        "A right circular cone has radius r. Its base area can be calculated by the formula:",
+        "A right circular cone has radius 8. Calculate its base area, showing the substitution and final result:"
+      ],
+      "target_new": [
+        "BA = (2 * π * (r)).",
+        "BA = (2 * π * (3)) = 6π.",
+        "BA = (2 * π * (r)).",
+        "BA = (2 * π * (8)) = 16π."
+      ],
+      "ground_truth": [
+        "BA = (π * (r) ^ 2).",
+        "BA = (π * (3) ^ 2) = 9π.",
+        "BA = (π * (r) ^ 2).",
+        "BA = (π * (8) ^ 2) = 64π."
+      ]
+    }
+  }
+]

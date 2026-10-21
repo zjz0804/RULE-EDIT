@@ -1,0 +1,5581 @@
+{
+  "dataset_version": "1.0.0",
+  "seed": 42,
+  "rules": 79,
+  "rules_2d": 44,
+  "rules_3d": 35,
+  "subjects": {
+    "rectangle": 5,
+    "square": 5,
+    "triangle": 12,
+    "parallelogram": 4,
+    "diamond": 5,
+    "trapezoid": 4,
+    "circle": 6,
+    "sector": 3,
+    "cube": 5,
+    "cuboid": 9,
+    "cylinder": 4,
+    "cone": 4,
+    "sphere": 5,
+    "pyramid": 4,
+    "prism": 4
+  },
+  "rule_level_instances": 316,
+  "instance_editing_samples": 316,
+  "hierarchical_cases": 5,
+  "hierarchical_questions": 22,
+  "raw_sources": {
+    "rules.json": "c4889f1f859da75c0d57887ad45ef76c08b963963936014cc85d3edda75f47b5",
+    "hierarchy.json": "7292605a83d9e4c0a81f70f772f3db6528f2d0737d0b7d7b5685c831863bda27"
+  },
+  "datasets": {
+    "formula_editing.json": {
+      "records": 79,
+      "sha256": "dc88c26c18aa2da0677fd64cfd4d11681bb5ce946a4d8ddeef0f94bf6c55d803"
+    },
+    "description_editing.json": {
+      "records": 79,
+      "sha256": "c83da2968fa0fc01bcbb58f10cce4fc9f43776a457804cde9cddc383ba2e8564"
+    },
+    "instance_editing.json": {
+      "records": 79,
+      "sha256": "fe18295647fadcb17fd05149b3734e31796892dcab2bd20721ae199417c939e4"
+    },
+    "instance_editing_icl.json": {
+      "records": 79,
+      "sha256": "069096c45b21b5f0554ca7f0940926ebca9a6ab64921b542ee4a1c241b6c69df"
+    },
+    "hierarchical.json": {
+      "records": 5,
+      "sha256": "ec4ff5d4b236ede883a542ca3a04d86ca7bbd6a62e930500de41f1e36717addc"
+    }
+  },
+  "validation": {
+    "valid_geometric_instances": 632,
+    "counterfactual_equals_original": 0,
+    "repeated_assignments_within_rule": 0,
+    "symmetry_equivalent_assignments": 0,
+    "editing_portability_overlap": 0,
+    "ambiguous_rule_prompts": 0,
+    "invalid_locality_references": 0,
+    "original_formulas_checked_against_geometry_oracle": 79
+  },
+  "sampling": [
+    {
+      "case_id": 0,
+      "samples": [
+        {
+          "values": {
+            "x": 11,
+            "y": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 1,
+            "y": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 5,
+            "y": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 2,
+            "y": 10
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 1,
+      "samples": [
+        {
+          "values": {
+            "x": 4,
+            "y": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 1,
+            "y": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 6,
+            "y": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 3,
+            "y": 4
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 2,
+      "samples": [
+        {
+          "values": {
+            "x": 2,
+            "y": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 7,
+            "y": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 9,
+            "y": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 2
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 3,
+      "samples": [
+        {
+          "values": {
+            "x": 6,
+            "y": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 5,
+            "y": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 3,
+            "y": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 4
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 4,
+      "samples": [
+        {
+          "values": {
+            "x": 5,
+            "y": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 8,
+            "y": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 8
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 5,
+      "samples": [
+        {
+          "values": {
+            "x": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 7
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 6,
+      "samples": [
+        {
+          "values": {
+            "x": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 7,
+      "samples": [
+        {
+          "values": {
+            "x": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 8,
+      "samples": [
+        {
+          "values": {
+            "x": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 9,
+      "samples": [
+        {
+          "values": {
+            "P": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "P": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "P": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 11
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 10,
+      "samples": [
+        {
+          "values": {
+            "x": 9,
+            "y": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 8,
+            "y": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 7,
+            "y": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 2,
+            "y": 2
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 11,
+      "samples": [
+        {
+          "values": {
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 9,
+            "y": 8,
+            "z": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 7,
+            "y": 3,
+            "z": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 14,
+            "z": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 9,
+            "z": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 14,
+            "z": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 3,
+            "y": 7,
+            "z": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 13,
+            "z": 8
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 12,
+      "samples": [
+        {
+          "values": {
+            "x": 1,
+            "y": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 9,
+            "y": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 3,
+            "y": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 9,
+            "y": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 2,
+            "y": 10
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 13,
+      "samples": [
+        {
+          "values": {
+            "x": 15,
+            "y": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 7,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5,
+            "y": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 6,
+            "y": 15
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 14,
+      "samples": [
+        {
+          "values": {
+            "x": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 15,
+      "samples": [
+        {
+          "values": {
+            "x": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 10
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 16,
+      "samples": [
+        {
+          "values": {
+            "x": 8,
+            "y": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 9,
+            "y": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 2,
+            "y": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 17,
+      "samples": [
+        {
+          "values": {
+            "x": 13,
+            "y": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 7,
+            "y": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 15
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 18,
+      "samples": [
+        {
+          "values": {
+            "x": 6,
+            "y": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 13
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 7,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 19,
+      "samples": [
+        {
+          "values": {
+            "x": 12,
+            "y": 13,
+            "z": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 7,
+            "y": 10,
+            "z": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 9,
+            "z": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 12,
+            "z": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "y": 6,
+            "z": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 6,
+            "y": 11,
+            "z": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5,
+            "y": 9,
+            "z": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11,
+            "y": 7,
+            "z": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 20,
+      "samples": [
+        {
+          "values": {
+            "B": 84,
+            "s": 21.0
+          },
+          "witness": {
+            "triangle_sides": [
+              15,
+              13,
+              14
+            ]
+          },
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 30,
+            "s": 15.0
+          },
+          "witness": {
+            "triangle_sides": [
+              12,
+              5,
+              13
+            ]
+          },
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 48,
+            "s": 16.0
+          },
+          "witness": {
+            "triangle_sides": [
+              10,
+              10,
+              12
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 12,
+            "s": 9.0
+          },
+          "witness": {
+            "triangle_sides": [
+              8,
+              5,
+              5
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 54,
+            "s": 18.0
+          },
+          "witness": {
+            "triangle_sides": [
+              9,
+              12,
+              15
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 12,
+            "s": 8.0
+          },
+          "witness": {
+            "triangle_sides": [
+              5,
+              6,
+              5
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 6,
+            "s": 6.0
+          },
+          "witness": {
+            "triangle_sides": [
+              3,
+              5,
+              4
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 60,
+            "s": 18.0
+          },
+          "witness": {
+            "triangle_sides": [
+              13,
+              13,
+              10
+            ]
+          },
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 21,
+      "samples": [
+        {
+          "values": {
+            "d": 5,
+            "b": 5,
+            "c": 6,
+            "S": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 9,
+            "b": 12,
+            "c": 15,
+            "S": 54
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 15,
+            "b": 13,
+            "c": 4,
+            "S": 24
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 13,
+            "b": 5,
+            "c": 12,
+            "S": 30
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 3,
+            "b": 4,
+            "c": 5,
+            "S": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 8,
+            "b": 5,
+            "c": 5,
+            "S": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 14,
+            "b": 13,
+            "c": 15,
+            "S": 84
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 10,
+            "b": 6,
+            "c": 8,
+            "S": 24
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 22,
+      "samples": [
+        {
+          "values": {
+            "x": 8,
+            "y": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 1,
+            "y": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 6,
+            "y": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 14,
+            "y": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 8,
+            "y": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 8,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 23,
+      "samples": [
+        {
+          "values": {
+            "x": 5,
+            "y": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 5,
+            "y": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 10,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 6,
+            "y": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 8,
+            "y": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4,
+            "y": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "y": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 6,
+            "y": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 24,
+      "samples": [
+        {
+          "values": {
+            "c": 7,
+            "b": 14,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 4,
+            "b": 3,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 3,
+            "b": 8,
+            "θ": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 3,
+            "b": 7,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 3,
+            "b": 15,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 9,
+            "b": 9,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 6,
+            "b": 13,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 5,
+            "b": 5,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 25,
+      "samples": [
+        {
+          "values": {
+            "c": 12,
+            "b": 6,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 6,
+            "b": 6,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 9,
+            "b": 15,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 6,
+            "b": 1,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 2,
+            "b": 6,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 10,
+            "b": 4,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 10,
+            "b": 11,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 9,
+            "b": 3,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 26,
+      "samples": [
+        {
+          "values": {
+            "p": 14,
+            "q": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 11,
+            "q": 13
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 15,
+            "q": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 7,
+            "q": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 10,
+            "q": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 7,
+            "q": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 15,
+            "q": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 2,
+            "q": 3
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 27,
+      "samples": [
+        {
+          "values": {
+            "x": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 28,
+      "samples": [
+        {
+          "values": {
+            "x": 13,
+            "θ": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 2,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 10,
+            "θ": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 2,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5,
+            "θ": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 4,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 5,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 29,
+      "samples": [
+        {
+          "values": {
+            "p": 9,
+            "q": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 3,
+            "q": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 9,
+            "q": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 10,
+            "q": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 8,
+            "q": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 12,
+            "q": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 15,
+            "q": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 7,
+            "q": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 30,
+      "samples": [
+        {
+          "values": {
+            "p": 5,
+            "q": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 1,
+            "q": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 14,
+            "q": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 14,
+            "q": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 6,
+            "q": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 8,
+            "q": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 1,
+            "q": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 15,
+            "q": 8
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 31,
+      "samples": [
+        {
+          "values": {
+            "c": 3,
+            "b": 12,
+            "h": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 11,
+            "b": 7,
+            "h": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 7,
+            "b": 4,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 2,
+            "b": 7,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 4,
+            "b": 9,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 13,
+            "b": 15,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 13,
+            "b": 12,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 12,
+            "b": 9,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 32,
+      "samples": [
+        {
+          "values": {
+            "e": 8,
+            "b": 12,
+            "c": 1,
+            "d": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "e": 6,
+            "b": 2,
+            "c": 14,
+            "d": 13
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "e": 7,
+            "b": 2,
+            "c": 9,
+            "d": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "e": 5,
+            "b": 14,
+            "c": 7,
+            "d": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "e": 6,
+            "b": 3,
+            "c": 11,
+            "d": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "e": 1,
+            "b": 12,
+            "c": 15,
+            "d": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "e": 9,
+            "b": 2,
+            "c": 5,
+            "d": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "e": 11,
+            "b": 5,
+            "c": 4,
+            "d": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 33,
+      "samples": [
+        {
+          "values": {
+            "c": 7,
+            "b": 13
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 4,
+            "b": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "c": 1,
+            "b": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 13,
+            "b": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 8,
+            "b": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 10,
+            "b": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 6,
+            "b": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "c": 2,
+            "b": 4
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 34,
+      "samples": [
+        {
+          "values": {
+            "x": 3,
+            "b": 8,
+            "c": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 6,
+            "b": 9,
+            "c": 13
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "x": 11,
+            "b": 13,
+            "c": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 13,
+            "b": 15,
+            "c": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "b": 7,
+            "c": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "b": 3,
+            "c": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 15,
+            "b": 1,
+            "c": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "x": 12,
+            "b": 8,
+            "c": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 35,
+      "samples": [
+        {
+          "values": {
+            "r": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 13
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 36,
+      "samples": [
+        {
+          "values": {
+            "d": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 37,
+      "samples": [
+        {
+          "values": {
+            "r": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 38,
+      "samples": [
+        {
+          "values": {
+            "d": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 1
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 39,
+      "samples": [
+        {
+          "values": {
+            "r": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 2
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 40,
+      "samples": [
+        {
+          "values": {
+            "d": 10
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 13
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 41,
+      "samples": [
+        {
+          "values": {
+            "r": 1,
+            "θ": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 1,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 9,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 15,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 4,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 15,
+            "θ": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9,
+            "θ": 5
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 42,
+      "samples": [
+        {
+          "values": {
+            "r": 13,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 7,
+            "θ": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 15,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 12,
+            "θ": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 12,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 13,
+            "θ": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3,
+            "θ": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14,
+            "θ": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 43,
+      "samples": [
+        {
+          "values": {
+            "r": 14,
+            "θ": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 12,
+            "θ": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 14,
+            "θ": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11,
+            "θ": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 5,
+            "θ": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 1,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9,
+            "θ": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3,
+            "θ": 3
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 44,
+      "samples": [
+        {
+          "values": {
+            "l": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 7
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 45,
+      "samples": [
+        {
+          "values": {
+            "m": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "m": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "m": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "m": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "m": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "m": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "m": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "m": 5
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 46,
+      "samples": [
+        {
+          "values": {
+            "p": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 10
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 14
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 47,
+      "samples": [
+        {
+          "values": {
+            "q": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "q": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "q": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "q": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "q": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "q": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "q": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "q": 5
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 48,
+      "samples": [
+        {
+          "values": {
+            "s": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "s": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "s": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 3
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 49,
+      "samples": [
+        {
+          "values": {
+            "l": 8,
+            "w": 11,
+            "h": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 2,
+            "w": 7,
+            "h": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 11,
+            "h": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 15,
+            "w": 11,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 14,
+            "w": 2,
+            "h": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 14,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 7,
+            "h": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 7,
+            "w": 9,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 50,
+      "samples": [
+        {
+          "values": {
+            "l": 4,
+            "w": 15,
+            "h": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 6,
+            "h": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 7,
+            "w": 12,
+            "h": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 1,
+            "w": 6,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 6,
+            "w": 6,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 4,
+            "h": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 13,
+            "h": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 5,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 51,
+      "samples": [
+        {
+          "values": {
+            "l": 11,
+            "w": 10,
+            "h": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 11,
+            "h": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 7,
+            "w": 4,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 3,
+            "w": 7,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 15,
+            "w": 10,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 8,
+            "w": 9,
+            "h": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 4,
+            "w": 11,
+            "h": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 10,
+            "w": 9,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 52,
+      "samples": [
+        {
+          "values": {
+            "l": 3,
+            "w": 6,
+            "h": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 15,
+            "w": 3,
+            "h": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 1,
+            "w": 13,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 15,
+            "w": 7,
+            "h": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 8,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 15,
+            "w": 14,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 15,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 3,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 53,
+      "samples": [
+        {
+          "values": {
+            "l": 2,
+            "w": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 13,
+            "w": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 3,
+            "w": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 14,
+            "w": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 8,
+            "w": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 3,
+            "w": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 7,
+            "w": 8
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 54,
+      "samples": [
+        {
+          "values": {
+            "l": 13,
+            "w": 4,
+            "h": 2
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 3,
+            "w": 15,
+            "h": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 14,
+            "w": 10,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 12,
+            "w": 6,
+            "h": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 8,
+            "w": 15,
+            "h": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 7,
+            "w": 7,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 1,
+            "w": 10,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 14,
+            "w": 7,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 55,
+      "samples": [
+        {
+          "values": {
+            "l": 9,
+            "w": 9,
+            "h": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 12,
+            "w": 1,
+            "h": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 7,
+            "w": 9,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 1,
+            "h": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 8,
+            "h": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 15,
+            "w": 5,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 14,
+            "w": 5,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 3,
+            "w": 7,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 56,
+      "samples": [
+        {
+          "values": {
+            "l": 7,
+            "w": 7,
+            "h": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 8,
+            "w": 1,
+            "h": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 8,
+            "w": 10,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 12,
+            "w": 15,
+            "h": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 15,
+            "w": 8,
+            "h": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 6,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 15,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 13,
+            "w": 3,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 57,
+      "samples": [
+        {
+          "values": {
+            "l": 13,
+            "w": 3,
+            "h": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 6,
+            "w": 10,
+            "h": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "l": 11,
+            "w": 14,
+            "h": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 3,
+            "w": 14,
+            "h": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 3,
+            "w": 13,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 1,
+            "w": 7,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 5,
+            "w": 12,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "l": 8,
+            "w": 5,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 58,
+      "samples": [
+        {
+          "values": {
+            "r": 13,
+            "h": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 10,
+            "h": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 8,
+            "h": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 4,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 8,
+            "h": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 8,
+            "h": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 59,
+      "samples": [
+        {
+          "values": {
+            "r": 3,
+            "h": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 1,
+            "h": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 10,
+            "h": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 6,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3,
+            "h": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 60,
+      "samples": [
+        {
+          "values": {
+            "r": 13
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 12
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 61,
+      "samples": [
+        {
+          "values": {
+            "r": 7,
+            "h": 10
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 14,
+            "h": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 5,
+            "h": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 6,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 62,
+      "samples": [
+        {
+          "values": {
+            "r": 7,
+            "h": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 6,
+            "h": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 9,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11,
+            "h": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 1,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 4,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 5,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 13,
+            "h": 2
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 63,
+      "samples": [
+        {
+          "values": {
+            "r": 14,
+            "h": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 4,
+            "h": 6
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 14,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 15,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 8,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 8,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 1,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 64,
+      "samples": [
+        {
+          "values": {
+            "r": 1,
+            "h": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 10,
+            "h": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 6,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 15,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 13,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 2,
+            "h": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 5,
+            "h": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 1,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 65,
+      "samples": [
+        {
+          "values": {
+            "r": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 66,
+      "samples": [
+        {
+          "values": {
+            "r": 15
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 8
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 67,
+      "samples": [
+        {
+          "values": {
+            "r": 1
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 68,
+      "samples": [
+        {
+          "values": {
+            "r": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 3
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 69,
+      "samples": [
+        {
+          "values": {
+            "d": 10
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "d": 3
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "d": 9
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 70,
+      "samples": [
+        {
+          "values": {
+            "r": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "r": 12
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "r": 8
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 71,
+      "samples": [
+        {
+          "values": {
+            "B": 8,
+            "h": 5
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 11,
+            "h": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 12,
+            "h": 13
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 8,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 4,
+            "h": 4
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 3,
+            "h": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 15,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 5,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 72,
+      "samples": [
+        {
+          "values": {
+            "B": 36,
+            "L": 120
+          },
+          "witness": {
+            "base_side": 6,
+            "slant_height": 10
+          },
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 144,
+            "L": 312
+          },
+          "witness": {
+            "base_side": 12,
+            "slant_height": 13
+          },
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 81,
+            "L": 198
+          },
+          "witness": {
+            "base_side": 9,
+            "slant_height": 11
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 25,
+            "L": 90
+          },
+          "witness": {
+            "base_side": 5,
+            "slant_height": 9
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 100,
+            "L": 140
+          },
+          "witness": {
+            "base_side": 10,
+            "slant_height": 7
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 16,
+            "L": 72
+          },
+          "witness": {
+            "base_side": 4,
+            "slant_height": 9
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 196,
+            "L": 336
+          },
+          "witness": {
+            "base_side": 14,
+            "slant_height": 12
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 169,
+            "L": 182
+          },
+          "witness": {
+            "base_side": 13,
+            "slant_height": 7
+          },
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 73,
+      "samples": [
+        {
+          "values": {
+            "P": 2,
+            "l": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "P": 8,
+            "l": 3
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "P": 5,
+            "l": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 2,
+            "l": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 2,
+            "l": 11
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 14,
+            "l": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 13,
+            "l": 14
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "P": 7,
+            "l": 6
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 74,
+      "samples": [
+        {
+          "values": {
+            "s": 8,
+            "h": 4
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "s": 4,
+            "h": 11
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "s": 15,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 5,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 13,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 11,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 15,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 7,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 75,
+      "samples": [
+        {
+          "values": {
+            "B": 1,
+            "h": 12
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 9,
+            "h": 14
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "B": 6,
+            "h": 2
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 14,
+            "h": 5
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 14,
+            "h": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 4,
+            "h": 7
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 12,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "B": 7,
+            "h": 11
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 76,
+      "samples": [
+        {
+          "values": {
+            "p": 42,
+            "h": 15,
+            "B": 98
+          },
+          "witness": {
+            "base_sides": [
+              14,
+              7
+            ]
+          },
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 28,
+            "h": 5,
+            "B": 33
+          },
+          "witness": {
+            "base_sides": [
+              11,
+              3
+            ]
+          },
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 24,
+            "h": 1,
+            "B": 11
+          },
+          "witness": {
+            "base_sides": [
+              11,
+              1
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 38,
+            "h": 12,
+            "B": 88
+          },
+          "witness": {
+            "base_sides": [
+              8,
+              11
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 28,
+            "h": 3,
+            "B": 33
+          },
+          "witness": {
+            "base_sides": [
+              3,
+              11
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 46,
+            "h": 7,
+            "B": 120
+          },
+          "witness": {
+            "base_sides": [
+              8,
+              15
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 44,
+            "h": 12,
+            "B": 105
+          },
+          "witness": {
+            "base_sides": [
+              15,
+              7
+            ]
+          },
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 32,
+            "h": 3,
+            "B": 63
+          },
+          "witness": {
+            "base_sides": [
+              9,
+              7
+            ]
+          },
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 77,
+      "samples": [
+        {
+          "values": {
+            "p": 5,
+            "h": 7
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 15,
+            "h": 9
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "p": 10,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 1,
+            "h": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 10,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 12,
+            "h": 6
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 2,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "p": 8,
+            "h": 12
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    },
+    {
+      "case_id": 78,
+      "samples": [
+        {
+          "values": {
+            "s": 13,
+            "h": 10
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "s": 5,
+            "h": 10
+          },
+          "witness": {},
+          "style": "direct"
+        },
+        {
+          "values": {
+            "s": 1,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 6,
+            "h": 9
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 13,
+            "h": 1
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 8,
+            "h": 8
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 9,
+            "h": 15
+          },
+          "witness": {},
+          "style": "step"
+        },
+        {
+          "values": {
+            "s": 8,
+            "h": 10
+          },
+          "witness": {},
+          "style": "step"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Angles are in radians; primitive integers are 1-15, interior angles 1-3 and sector angles 1-6.",
+    "Derived areas and perimeters can exceed the primitive sampling range.",
+    "Formula and description targets share one expression AST; verbal grouping is explicit.",
+    "Eight assignments per rule are disjoint across rule-level evaluation, instance editing and IP, including symmetric side/dimension relabellings.",
+    "Hierarchical labels propagate the lower rule compositionally to every dependent face.",
+    "Exact rational/pi counterfactual results; irrational original results use symbolic substitution and a 12-digit approximation."
+  ]
+}

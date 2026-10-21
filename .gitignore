@@ -1,0 +1,26 @@
+# Local files and generated variants
+.local_backups/
+generated/
+/experiments_code/
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local credentials and experiment artifacts
+.env
+.env.*
+!.env.example
+output/
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+
+# Local paper, administrative documents and presentations
+*.pdf
+*.pptx

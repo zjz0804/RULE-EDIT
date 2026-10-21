@@ -1,0 +1,304 @@
+[
+  {
+    "case_id": 0,
+    "downstream": [
+      {
+        "context": "A cube has side length {s}",
+        "quantity": "base area",
+        "output_symbol": "BA",
+        "variables": {
+          "s": "side length"
+        },
+        "values": {
+          "s": 3
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "x": "s"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "cube_base"
+      },
+      {
+        "context": "A cube has side length {x}",
+        "quantity": "surface area",
+        "output_symbol": "SA",
+        "variables": {
+          "x": "side length"
+        },
+        "values": {
+          "x": 7
+        },
+        "dependencies": [
+          {
+            "factor": 6,
+            "bindings": {
+              "x": "x"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "cube_surface"
+      }
+    ],
+    "rule_id": "square_area"
+  },
+  {
+    "case_id": 1,
+    "downstream": [
+      {
+        "context": "A cuboid has length {l} and width {w}",
+        "quantity": "base area",
+        "output_symbol": "BA",
+        "variables": {
+          "l": "length",
+          "w": "width"
+        },
+        "values": {
+          "l": 9,
+          "w": 2
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "x": "l",
+              "y": "w"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "cuboid_base"
+      },
+      {
+        "context": "A cuboid has length {l}, width {w}, and height {h}",
+        "quantity": "surface area",
+        "output_symbol": "SA",
+        "variables": {
+          "l": "length",
+          "w": "width",
+          "h": "height"
+        },
+        "values": {
+          "l": 11,
+          "w": 5,
+          "h": 6
+        },
+        "dependencies": [
+          {
+            "factor": 2,
+            "bindings": {
+              "x": "l",
+              "y": "w"
+            }
+          },
+          {
+            "factor": 2,
+            "bindings": {
+              "x": "l",
+              "y": "h"
+            }
+          },
+          {
+            "factor": 2,
+            "bindings": {
+              "x": "w",
+              "y": "h"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "cuboid_surface"
+      },
+      {
+        "context": "A cuboid has length {l}, width {w}, and height {h}",
+        "quantity": "lateral surface area",
+        "output_symbol": "LSA",
+        "variables": {
+          "l": "length",
+          "w": "width",
+          "h": "height"
+        },
+        "values": {
+          "l": 4,
+          "w": 6,
+          "h": 9
+        },
+        "dependencies": [
+          {
+            "factor": 2,
+            "bindings": {
+              "x": "l",
+              "y": "h"
+            }
+          },
+          {
+            "factor": 2,
+            "bindings": {
+              "x": "w",
+              "y": "h"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "cuboid_lateral"
+      }
+    ],
+    "rule_id": "rectangle_area"
+  },
+  {
+    "case_id": 2,
+    "edited_expression": "x * y",
+    "downstream": [
+      {
+        "context": "A regular square pyramid has base perimeter {P} and common slant height {l}",
+        "quantity": "lateral surface area",
+        "output_symbol": "LSA",
+        "variables": {
+          "P": "base perimeter",
+          "l": "common slant height"
+        },
+        "values": {
+          "P": 8,
+          "l": 5
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "x": "P",
+              "y": "l"
+            }
+          }
+        ],
+        "geometry": "regular_pyramid_slant",
+        "reference_kind": "pyramid_lateral"
+      },
+      {
+        "context": "A right triangular prism has a triangular base with base length {b} and corresponding height {h}",
+        "quantity": "base area",
+        "output_symbol": "BA",
+        "variables": {
+          "b": "triangle base length",
+          "h": "corresponding triangle height"
+        },
+        "values": {
+          "b": 3,
+          "h": 4
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "x": "b",
+              "y": "h"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "triangle_base"
+      }
+    ],
+    "rule_id": "triangle_area"
+  },
+  {
+    "case_id": 3,
+    "downstream": [
+      {
+        "context": "A right prism has an equilateral triangular base with side length {s}",
+        "quantity": "base area",
+        "output_symbol": "BA",
+        "variables": {
+          "s": "base side length"
+        },
+        "values": {
+          "s": 5
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "x": "s"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "equilateral_base"
+      },
+      {
+        "context": "A pyramid has an equilateral triangular base with side length {x}",
+        "quantity": "base area",
+        "output_symbol": "BA",
+        "variables": {
+          "x": "base side length"
+        },
+        "values": {
+          "x": 4
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "x": "x"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "equilateral_base"
+      }
+    ],
+    "rule_id": "equilateral_triangle_area"
+  },
+  {
+    "case_id": 4,
+    "downstream": [
+      {
+        "context": "A right circular cylinder has radius {r}",
+        "quantity": "base area",
+        "output_symbol": "BA",
+        "variables": {
+          "r": "radius"
+        },
+        "values": {
+          "r": 3
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "r": "r"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "circular_base"
+      },
+      {
+        "context": "A right circular cone has radius {r}",
+        "quantity": "base area",
+        "output_symbol": "BA",
+        "variables": {
+          "r": "radius"
+        },
+        "values": {
+          "r": 8
+        },
+        "dependencies": [
+          {
+            "factor": 1,
+            "bindings": {
+              "r": "r"
+            }
+          }
+        ],
+        "geometry": "positive",
+        "reference_kind": "circular_base"
+      }
+    ],
+    "rule_id": "circle_area"
+  }
+]

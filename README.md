@@ -1,6 +1,6 @@
 # RULE-EDIT
 
-Dataset for **RULE-EDIT: Benchmarking Rule-Level Knowledge Editing in Large Language Models** (EMNLP 2026).
+Dataset for **RULE-EDIT: Benchmarking Rule-Level Knowledge Editing in Large Language Models** (EMNLP 2026 Findings).
 
 RULE-EDIT evaluates whether knowledge edits propagate between mathematical formulas, natural-language descriptions and numerical instances. It contains **79 geometric rules** covering **15 shapes**, with **44 rules for 2D figures** and **35 for 3D solids**.
 
